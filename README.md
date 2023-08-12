@@ -7,7 +7,7 @@
 Install using pip:
 
 ```bash
-pip install stips.py
+pip install stipspy
 ```
 
 ## 🪴 Usage

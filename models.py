@@ -55,7 +55,7 @@ class UserIdMethods:
 
   @check_user_id
   def get_user(self, **kw) -> Profile:
-    return self._state.get_user(user_id=self.id, **kw)
+    return self._state.get_user(id=self.id, **kw)
 
   @check_user_id
   def get_thanks(self, page: int = 1, **kw) -> typing.List[Thank]:
