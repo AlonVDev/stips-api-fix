@@ -64,7 +64,7 @@ More examples in the [/examples directory](examples)
 ## 📃 Documentation
 
 You can find the documentation here:<br/>
-https://stips-py.readthedocs.io/en/latest/
+https://stipspy.readthedocs.io/en/latest/
 
 ## 🛣️ Roadmap
 

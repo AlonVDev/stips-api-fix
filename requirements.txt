@@ -5,3 +5,4 @@ dateparser
 lxml
 sphinx_rtd_theme
 requests
+python-magic-bin
