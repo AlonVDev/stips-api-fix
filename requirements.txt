@@ -4,3 +4,4 @@ dataclasses-json
 dateparser
 lxml
 requests
+sphinx_rtd_theme
