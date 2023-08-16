@@ -4,7 +4,7 @@
 
 ## ⛲ Install
 
-Install using pip:
+Install using pip ([pypi](https://pypi.org/project/stipspy/)):
 
 ```bash
 pip install stipspy
