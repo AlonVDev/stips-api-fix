@@ -64,7 +64,7 @@ More examples in the [/examples directory](examples)
 ## 📃 Documentation
 
 You can find the documentation here:<br/>
-https://stipspy.readthedocs.io/en/latest/
+[https://verifybot.github.io/stipsapi-docs/stips.html](https://verifybot.github.io/stipsapi-docs/stips.html)
 
 ## 🛣️ Roadmap
 
