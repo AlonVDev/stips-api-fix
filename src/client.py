@@ -539,7 +539,7 @@ class StipsClient:
     """
     return self.http.post(
       params={'askid': question_id, 'a': text, 'name': name, 'link1': link_url, 'link1name': link_name,
-              'annoflg': anonymous},
+              'anonflg': anonymous},
       omniobj='ans', omnirest='PUT', get_id=True, **kw)
 
   @ABCHelpers.require_cookies
