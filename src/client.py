@@ -596,7 +596,7 @@ class StipsClient:
     :param anonymous: Whether or not to post the question Anonymously
     """
     return self.http.post(params={'q': title, 'text_content': content, 'name': name,
-                                  'photo': utils.unsplash(photo), 'q_link': qlink_link,
+                                  'photo': utils.unsplash(photo), 'q_link': link,
                                   'tagslist': tags, 'anonflg': anonymous, 'ask_type': 11}, omniobj='ask',
                           omnirest='PUT', get_id=True, **kw)
 
