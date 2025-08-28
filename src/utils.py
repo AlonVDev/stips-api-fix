@@ -20,6 +20,16 @@ def unsplash(photo: str = None) -> str:
   return (f'unsplash:{photo}' if not photo.isdigit() else photo) if photo else None
 
 
+def qlink_link(link: str = '') -> str:
+  """Normalize a question link for the ask endpoint.
+
+  The original implementation referenced an undefined name ``qlink_link``
+  which resulted in a ``NameError``.  Provide a small helper that returns the
+  provided link or an empty string when ``link`` is falsy.
+  """
+  return link or ''
+
+
 def users_sort(keyword: str, results: typing.Iterable[models.PartialUser], get_ratio: bool = False) -> typing.List[
   models.PartialUser]:
   """Sort a list of users by their similarity to a keyword."""
