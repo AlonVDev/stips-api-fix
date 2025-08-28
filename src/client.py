@@ -595,10 +595,24 @@ class StipsClient:
     :param tags: The question's tags
     :param anonymous: Whether or not to post the question Anonymously
     """
-    return self.http.post(params={'q': title, 'text_content': content, 'name': name,
-                                  'photo': utils.unsplash(photo), 'q_link': link,
-                                  'tagslist': tags, 'anonflg': anonymous, 'ask_type': 11}, omniobj='ask',
-                          omnirest='PUT', get_id=True, **kw)
+    # Normalize the link using ``utils.qlink_link`` to avoid the previous
+    # ``NameError`` that occurred when ``qlink_link`` was missing.
+    return self.http.post(
+      params={
+        'q': title,
+        'text_content': content,
+        'name': name,
+        'photo': utils.unsplash(photo),
+        'q_link': utils.qlink_link(link),
+        'tagslist': tags,
+        'anonflg': anonymous,
+        'ask_type': 11
+      },
+      omniobj='ask',
+      omnirest='PUT',
+      get_id=True,
+      **kw
+    )
 
   def get_penfriends(self, page: int = 1, **kw) -> typing.List[PenfriendsItem]:
     """Get Penfriends Messages
